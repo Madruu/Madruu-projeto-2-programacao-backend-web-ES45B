@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/styles.css">
+  <title>Painel do Usuário</title>
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+      <h1>Bem-vindo ao Painel!</h1>
+      <p class="subtitle">Você está autenticado com sucesso.</p>
+    </header>
+
+    <section class="info-cards">
+      <div class="card">
+        <h2>Status da Conta</h2>
+        <p>Conta ativa e segura.</p>
+      </div>
+
+      <div class="card">
+        <h2>Último Acesso</h2>
+        <p><%= new Date().toLocaleString() %></p>
+      </div>
+
+      <div class="card">
+        <h2>Função</h2>
+        <p>Usuário padrão</p>
+      </div>
+    </section>
+
+    <footer>
+      <a href="/logout" class="btn-logout">Sair da conta</a>
+    </footer>
+  </div>
+</body>
+</html>
