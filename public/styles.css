@@ -1,0 +1,97 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: #333;
+}
+
+/* Container da página de login e dashboard */
+.container, .dashboard-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Header */
+header h1 {
+  margin: 0;
+  color: #333;
+  font-size: 2em;
+}
+
+header .subtitle {
+  font-size: 1.1em;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Cards de informações */
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  flex: 1 1 30%;
+  background-color: #f9f9f9;
+  border-left: 5px solid #667eea;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Botão de logout */
+.btn-logout {
+  display: inline-block;
+  margin-top: 40px;
+  background-color: #ff4d4d;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-logout:hover {
+  background-color: #e60000;
+}
+
+/* Formulário de login */
+form input, form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #667eea;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background-color: #5a67d8;
+}
+
+/* Erro */
+.error {
+  color: red;
+  margin-top: 10px;
+}
